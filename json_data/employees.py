@@ -2,11 +2,11 @@ import json
 json_file = "employees.json"
 employees = []
 class Employee:
-    def __init__(self, name, salary):
+    def __init__(self, name: str, salary: int):
         self.name = name
         self.salary = salary
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f'Name: {self.name} Salary: {self.salary}'
 
 if __name__ == '__main__':
