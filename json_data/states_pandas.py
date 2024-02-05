@@ -1,9 +1,6 @@
-import json
 import pandas as pd
 json_file = "states_data.json"
-with open(json_file, 'r') as file:
-    data = json.load(file)
-df = pd.DataFrame(data)
+df = pd.read_json(json_file)
 print(df.head())
 high_population_states = df[df['Population'] > 5000000]
 print(high_population_states)
