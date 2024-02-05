@@ -1,5 +1,5 @@
 from employee import Manager, Waiter, Chef, Mechanic
-import sys, importlib
+import sys
 sys.path.extend(['/home/tux/PycharmProjects/pythonProject/coin_toss'])
 from color import Colors
 
