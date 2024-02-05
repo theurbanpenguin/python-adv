@@ -7,6 +7,7 @@ class State:
         self.capital = capital
         self.population = population
 
+
     def __str__(self):
         formatted_population = "{:,}".format(self.population)  # Format population with commas
         return f"State: {self.state}, Capital: {self.capital}, Population: {formatted_population}"
@@ -38,14 +39,15 @@ if __name__ == "__main__":
     json_file = "states_data.json"  # Replace with your JSON file path
     states = load_states_from_json(json_file)
 
-    '''print("States sorted by state name:")
-    for state in sort_states_by_state_name(states):
-        print(state)
+    # print("States sorted by state name:")
+    # for state in sort_states_by_state_name(states):
+    #     print(state)
 
-    print("\nStates sorted by capital name:")
-    for state in sort_states_by_capital_name(states):
-        print(state)'''
+    # print("\nStates sorted by capital name:")
+    # for state in sort_states_by_capital_name(states):
+    #     print(state)
 
     print("\nStates sorted by population:")
     for state in sort_states_by_population(states):
         print(state)
+
