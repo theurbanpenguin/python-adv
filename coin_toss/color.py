@@ -1,10 +1,4 @@
 
-'''
-Class Colors holds ANSI codes that can be used to decorate text
-COLOR =  = ESCAPE [ font effect;font color m
-RED = "[0;31m" font effect 0 = normal 31 = red
-LIGHT RED = "[1;31m" font effect = 1 = bold 31 = red
-'''
 class Colors:
     BLACK = "[0;30m"
     RED = "[0;31m"
